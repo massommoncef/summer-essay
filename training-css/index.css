@@ -1,0 +1,111 @@
+body{
+background-color: white;
+color:white;
+margin:0px;
+font-size: 1,3em;
+}
+header{
+    width: 1124px;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    color:white;
+    position: relative;
+    z-index: 100;
+}
+header a{
+    margin-right:60px;
+    color:white;
+    text-decoration:none;
+}
+.carousel{
+    width: 100vw;;
+    height: 100vh;
+    margin-top: -60px;
+    overflow: hidden;
+    position: relative ;
+}
+
+.carousel .list .item{
+ position:absolute;
+ inset: 0 0 0 0;
+object-fit: cover;
+}
+.list .item img{
+    height: 100%;
+    width: 100%;
+object-fit: cover;
+}
+.list .item .content{
+position: absolute;
+top: 18%;
+width: 1124;
+max-width: 80%;
+left: 30%;
+transform: translateX(-30%);
+padding-right: 30%;
+box-sizing:border-box ;
+color:#fff;
+text-shadow: 0 5px 10px #0004;
+backdrop-filter: blur(0px);
+}
+
+.carousel .slider .items:first-child:hover{
+    animation: contentin 2s ;
+    cursor: pointer;
+}
+@keyframes contentin{
+    to{
+  backdrop-filter:blur(10px);
+  translate: translateY(-200px);
+  
+    }
+ 
+ }
+.carousel .list .item .autour{
+    font-weight: bold;
+    letter-spacing: 12px;
+  
+}
+.carousel .list .item .title{
+    font-weight: bolder;
+    font-size: 3.5em;
+}
+.carousel .list .item .topic{
+    font-weight: bolder;
+    font-size: 5em;
+    color:orange;
+}
+.carousel .slider{
+    position:absolute;
+    bottom: 7%;
+    left:50%;
+    height:30%;
+    width:45%;
+    display: flex;
+    flex-direction: row;
+    gap:70px;
+}
+
+.carousel .slider .items img{
+height: 100%;
+width:  100%;
+object-fit: cover;
+-o-object-fit: cover;
+border-radius : 20px;
+
+}
+.carousel .slider .items{
+    position : relative ;
+}
+.carousel .slider .items .discript{
+position: absolute;
+bottom: 0px;
+left: 2px;
+z-index: 3;
+font-size: 1.8em;
+letter-spacing: 3px;
+}
+

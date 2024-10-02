@@ -1,0 +1,155 @@
+body{
+    background-image: url("../image/background-cover-for-dice-game.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container h1{
+    font-size: 4em;
+    font-weight: bolder;
+    margin-left: 40%;
+    margin-bottom: 0px;
+}
+.container h3{
+    font-size: 3em;
+    color:white;
+    font-weight: bold;
+    margin-left: 46%;
+    margin-top: 0px;
+}
+.start{
+    width: 20%;
+    padding: 10px;
+    border-radius: 1000px;
+    border:none;
+    background-color: #e6e6e6;
+    position: relative;
+    font-size: 1.7em;
+    margin-top: 20%;
+    margin-left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start a{
+    text-decoration: none;
+    color : black;
+}
+.start::after{
+    content: '';
+    border-radius: 1000px;
+    background-image: linear-gradient(to top right ,#ccffff, #ff0055);
+    position: absolute;
+    height: calc(100% + 10px);
+    width: calc(100% + 10px); 
+    z-index: -1;
+}
+.start:hover{
+    box-shadow: 10px 0 50px #ff0055, -10px 0 50px #ccffff;
+    z-index: 0;
+}
+
+
+/* game-started  html part */
+
+h2{
+    font-size: 2.5em;
+    font-weight:bolder;
+    letter-spacing: 6px;
+    color:black;
+    margin-left: 23%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+input{
+    background-color: #f9af55;
+    color:black;
+    padding: 10px;
+    font-size: 1.9em;
+    margin-left: 32%;
+    border-radius: 1000px;
+    border:solid 2px black;
+    box-shadow: 10px 3px 10px black;
+    height: 25%; 
+    width: 30%;
+}
+.submit{
+    font-size: 1.7em;
+    height: auto;
+    width: auto;
+    display: block;
+    margin-left: 41%;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: 	#f3d3bd;
+    border-radius: 50px;
+    border:none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease;
+}
+.submit::after{
+    content: '';
+    background-image: linear-gradient(to bottom right,rgb(252, 226, 96),rgb(240, 115, 18));
+    position: absolute;
+    border-radius: 1000px;
+    height: calc(100% + 7px);
+    width: calc(100% + 10px);
+    z-index: -1;
+}
+.submit:hover{
+z-index: 0;
+transform: scale(1.05); 
+box-shadow: 10px 0px 25px rgb(252, 226, 96) , -10px 0px 25px rgb(240, 115, 18) ;
+}
+
+.results{
+height: 90%;
+width: 80%;
+background-color: rgba(60, 57, 57, 0.603);
+position: absolute;
+top: 51%;
+left: 50%;
+transform: translateX(-200%);
+display: none;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+animation: results-appear 1s ease-in 1 normal;
+opacity: 0.2;
+animation-fill-mode : forwards;
+}
+@keyframes results-appear{
+    to{
+        opacity: 1;
+        transform: translateX(-50%);
+      
+    }
+}
+.result{
+    font-size: 1.8em;
+    font-weight: bold;
+    color:white;
+}
+.imgs{
+    margin-top: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* animation : rotate-dices 2s ease-in 1 normal ;
+   animation-fill-mode: forwards; */
+}
+/* @keyframes rotate-dices{
+    to{
+        transform: rotate(360deg);
+        transform: translate(-10px,10px);
+
+    }
+} */
+.dices{
+    height: 150px;
+    width: 150px;
+}

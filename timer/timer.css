@@ -1,0 +1,74 @@
+body{
+    background-image:url("../image/young-girl-posing-with-slate.jpg");
+    background-position: center;
+    background-repeat: no-repeat ; 
+    background-size: cover;
+    
+}
+.wraper{
+    position: relative;
+    top: 80px;
+    left:1px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border-radius: 100px;
+    border:none;
+    width: 45%;
+    background-color: #f3d3bd;
+}
+/* .wraper::after{
+    content: "";
+    background-image: linear-gradient(to top right,rgb(253, 73, 253),rgb(0, 0, 109));
+    border-radius: 100px;
+    position : absolute;
+    height: 105%;
+    width: 103%;
+    top: -8px;
+    z-index: -2;
+} */
+.title{
+    letter-spacing: 3px;
+    font-size: 2.5em;
+    font-weight: bolder;
+    font-family: serif;
+    margin-bottom: 0px;
+}
+.title2{
+    letter-spacing: 1px;
+    font-size: 1.7em;
+    font-weight: bold;
+    font-family: serif;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.timer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.affichage{
+    font-size: 4em;
+    margin-bottom: 30px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border:none;
+    width: 130px;
+    font-size: 1.3em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
