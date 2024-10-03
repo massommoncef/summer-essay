@@ -1,13 +1,17 @@
 body{
     background-image:url("../image/young-girl-posing-with-slate.jpg");
-    background-position: center;
+    background-position:center;
     background-repeat: no-repeat ; 
     background-size: cover;
     
 }
+.togetbigerbckgrimg{
+    height: 150px;
+    
+}
 .wraper{
     position: relative;
-    top: 80px;
+    top: 20px;
     left:1px;
     padding: 10px;
     position: relative;
@@ -19,6 +23,7 @@ body{
     border:none;
     width: 45%;
     background-color: #f3d3bd;
+    
 }
 /* .wraper::after{
     content: "";
@@ -54,6 +59,7 @@ body{
 .affichage{
     font-size: 4em;
     margin-bottom: 30px;
+    font-stretch: expanded;
 }
 .buttons{
     display: flex;
